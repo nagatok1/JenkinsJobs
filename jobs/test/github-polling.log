@@ -1,0 +1,10 @@
+Started on Jan 11, 2019 11:18:08 AM
+Started by event from 192.30.253.29 ⇒ http://51.140.5.97:8080/github-webhook/ on Fri Jan 11 11:18:07 UTC 2019
+Using strategy: Default
+[poll] Last Built Revision: Revision 5b5420c04691711b44f314d24beea4f05337d0e6 (refs/remotes/origin/master)
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/nagatok1/spring-boot-hello-world # timeout=10
+Found 14 remote heads on https://github.com/nagatok1/spring-boot-hello-world
+[poll] Latest remote head revision on refs/heads/master is: b65e9efe12f40a9c886f9f4173bb6dfa9a89d88c
+Done. Took 0.46 sec
+Changes found

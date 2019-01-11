@@ -1,0 +1,82 @@
+Started by GitHub push by nagatok1
+Building in workspace /var/jenkins_home/workspace/test
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/nagatok1/spring-boot-hello-world
+ > git init /var/jenkins_home/workspace/test # timeout=10
+Fetching upstream changes from https://github.com/nagatok1/spring-boot-hello-world
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nagatok1/spring-boot-hello-world +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/nagatok1/spring-boot-hello-world # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nagatok1/spring-boot-hello-world # timeout=10
+Fetching upstream changes from https://github.com/nagatok1/spring-boot-hello-world
+ > git fetch --tags --progress https://github.com/nagatok1/spring-boot-hello-world +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b65e9efe12f40a9c886f9f4173bb6dfa9a89d88c (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b65e9efe12f40a9c886f9f4173bb6dfa9a89d88c
+Commit message: "Update index.html"
+ > git rev-list --no-walk 5b5420c04691711b44f314d24beea4f05337d0e6 # timeout=10
+[test] $ /bin/bash /tmp/jenkins275267453348577110.sh
+sbhw
+sbhw
+Untagged: spring-boot-hello-world:latest
+Deleted: sha256:e6c8f233bf6deec97fe3085c5a219950544414625916bdf995bb649b6834833b
+Deleted: sha256:7d65c2deec52cf110f4bcf9b06cbe2934fc63c36da63979e1b8c33a2286a61d8
+Deleted: sha256:498a905997c13f40be7739f0e4afc670e696649fd550d0b3932f06ca3200983e
+Cloning into 'spring-boot-hello-world'...
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hello-world 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ hello-world ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ hello-world ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ hello-world ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/test/spring-boot-hello-world/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ hello-world ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/test/spring-boot-hello-world/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ hello-world ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ hello-world ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ hello-world ---
+[INFO] Building jar: /var/jenkins_home/workspace/test/spring-boot-hello-world/target/hello-world-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.0.RELEASE:repackage (repackage) @ hello-world ---
+[INFO] Replacing main artifact /var/jenkins_home/workspace/test/spring-boot-hello-world/target/hello-world-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.642 s
+[INFO] Finished at: 2019-01-11T11:18:24+00:00
+[INFO] Final Memory: 33M/273M
+[INFO] ------------------------------------------------------------------------
+Sending build context to Docker daemon  16.73MB
+Step 1/3 : FROM java:8
+ ---> d23bdf5b1b1b
+Step 2/3 : COPY target/hello-world-0.0.1-SNAPSHOT.jar /opt/spring-boot-hello-world/app.jar
+ ---> 3ef92eb6d24d
+Removing intermediate container 6820dcfa382c
+Step 3/3 : ENTRYPOINT java -jar /opt/spring-boot-hello-world/app.jar
+ ---> Running in 60b4218d9b6f
+ ---> 9c3873ee28c8
+Removing intermediate container 60b4218d9b6f
+Successfully built 9c3873ee28c8
+ca7f8ebfc5ae195b452d4313072d8567f5f55118a401211be2d0ed44e5bfe347
+Finished: SUCCESS

@@ -1,0 +1,32 @@
+Started by user [8mha:////4NDLxRzyNFxnwtjdjz29U80z0EcpC7ccwnIqBZrBJ4stAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/jenkins_home/workspace/test
+[WS-CLEANUP] Deleting project workspace...
+Cloning the remote Git repository
+Cloning repository https://github.com/nagatok1/spring-boot-hello-world
+ > git init /var/jenkins_home/workspace/test # timeout=10
+Fetching upstream changes from https://github.com/nagatok1/spring-boot-hello-world
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/nagatok1/spring-boot-hello-world +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/nagatok1/spring-boot-hello-world # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/nagatok1/spring-boot-hello-world # timeout=10
+Fetching upstream changes from https://github.com/nagatok1/spring-boot-hello-world
+ > git fetch --tags --progress https://github.com/nagatok1/spring-boot-hello-world +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 5b5420c04691711b44f314d24beea4f05337d0e6 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5b5420c04691711b44f314d24beea4f05337d0e6
+Commit message: "Update application.properties"
+First time build. Skipping changelog.
+[test] $ /bin/bash /tmp/jenkins1036718566529027404.sh
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.38/containers/sbhw/stop: dial unix /var/run/docker.sock: connect: permission denied
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Delete http://%2Fvar%2Frun%2Fdocker.sock/v1.38/containers/sbhw: dial unix /var/run/docker.sock: connect: permission denied
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Delete http://%2Fvar%2Frun%2Fdocker.sock/v1.38/images/spring-boot-hello-world: dial unix /var/run/docker.sock: connect: permission denied
+Cloning into 'spring-boot-hello-world'...
+/tmp/jenkins1036718566529027404.sh: line 8: mvn: command not found
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.38/build?buildargs=%7B%7D&cachefrom=%5B%5D&cgroupparent=&cpuperiod=0&cpuquota=0&cpusetcpus=&cpusetmems=&cpushares=0&dockerfile=Dockerfile&labels=%7B%7D&memory=0&memswap=0&networkmode=default&rm=1&session=odjfufm6opiayj5e29rx0k2av&shmsize=0&t=spring-boot-hello-world%3Alatest&target=&ulimits=null&version=1: dial unix /var/run/docker.sock: connect: permission denied
+docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.38/containers/create?name=sbhw: dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
